@@ -1,0 +1,76 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.top-header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.task {
+    width: 100%;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* .light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+} */
