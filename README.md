@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Sistema de Gerenciamento de Tarefas
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🏠 Aplicação:
+https://gerenciamento-tarefas.vercel.app/
+<br><br>
 
-## Available Scripts
+## 🎯 Objetivo:
+  Desenvolver uma aplicação de gerenciamento de tarefas, com login e cadastro de usuário, utilizando o localStorage para armazenar os dados do usuário e tarefas adicionadas.
+<br><br>
 
-In the project directory, you can run:
+## ⚡ Funcionalidades:
+<ul>
+  <li>Login de usuário.</li>
+  <li>Cadastro de usuário.</li>
+  <li>Validação dos dados.</li>
+  <li>Adição de tarefas.</li>
+  <li>Exclusão de tarefas.</li>
+  <li>Conclusão de tarefas.</li>
+  <li>Armazenamento de dados do usuário e tarefas no localStorage.</li>
+</ul>
+<br>
 
-### `npm start`
+## 💡 Tecnologias:
+As tecnologias utilizadas foram: HTML, CSS, Javascript, React.JS, React Router DOM, Material UI, Git e Vercel.
+<div display: "flex">
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg" />
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" />
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"/>
+</div>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✋ Pré-requisitos para uso:
+<ul>    
+  <li>Ter acesso a internet.</li>
+  <li>Ter acesso a algum navegador de internet (Google Chrome, Mozilla, Edge ou qualquer outro).</li>
+</ul>
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📙 Dicas de uso:
+<ol>
+    <li>Crie uma conta com e-mail e senha.</li>
+    <li>Acesse a aplicação com o e-mail e senha cadastrado.</li>
+    <li>Adicione um título e uma descrição para sua tarefa.</li>
+    <li>Caso deseje, remover uma tarefa clique na lixeira.</li>
+    <li>Você também pode sair da aplicação, clicando em Sair.</li>
+</ol>
+<br>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 💻 Telas:
+<div align="center">
+  <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/ee92245f-cd84-4f08-b735-839137c75546" width="160">
+  <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/3f2591b5-2f87-4ced-8901-99c019c5b722" width="550">
+  <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/b7201cda-935d-411e-a82b-25fb8c5c46f5" width="110">
+</div>
