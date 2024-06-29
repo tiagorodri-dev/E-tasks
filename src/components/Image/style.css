@@ -1,0 +1,13 @@
+.image-controller {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    max-height: 100vh;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}

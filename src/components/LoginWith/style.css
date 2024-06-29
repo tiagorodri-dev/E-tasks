@@ -1,0 +1,16 @@
+.do-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.login-with {
+    color: #A3A9B2;
+    font-size: 14px;
+}
+
+.line-one, .line-two {
+    width: 80px;
+    border: 0.1px solid rgba(233, 233, 233, 0.7);
+}

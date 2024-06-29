@@ -7,10 +7,14 @@ export const Button = styled.button`
   border-radius: 5px;
   width: 100%;
   cursor: pointer;
-  background-color: #046ee5;
+  background-color: #ff8036;
   color: white;
   font-weight: 600;
   font-size: 16px;
-  max-width: 350px;
   margin-top: 1.5em;
+
+  &:hover {
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+  }
 `;

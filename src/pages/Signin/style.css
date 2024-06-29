@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    width: 100vw;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 40vw;
+    margin: 0 40px 0 40px;
+    text-align: center;
+}
+
+label {
+    color: #A3A9B2;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ff8036;
+}
