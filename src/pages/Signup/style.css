@@ -1,0 +1,18 @@
+.content-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 40vw;
+  margin: 0 40px 0 40px;
+  text-align: center;
+}

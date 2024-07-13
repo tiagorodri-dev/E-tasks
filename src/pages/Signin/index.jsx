@@ -48,37 +48,39 @@ const Signin = () => {
         <div className="content-right">
           <Dot/>
 
-          <div className="login">
+          <div className="content-login">
+            <div className="login">
 
-            <Title/>
+              <Title/>
 
-            <Input
-              type="email"
-              placeholder="Digite seu E-mail"
-              value={email}
-              onChange={(e) => [setEmail(e.target.value)]}
-            />
+              <Input
+                type="email"
+                placeholder="Digite seu E-mail"
+                value={email}
+                onChange={(e) => [setEmail(e.target.value)]}
+              />
 
-            <Input
-              type="password"
-              placeholder="Digite sua Senha"
-              value={senha}
-              onChange={(e) => [setSenha(e.target.value)]}
-            />
+              <Input
+                type="password"
+                placeholder="Digite sua Senha"
+                value={senha}
+                onChange={(e) => [setSenha(e.target.value)]}
+              />
 
-            <Button Text="Entrar" onClick={handleLogin} />
-            <LoginWith />
-            <ButtonGoogle Text="Google"/>
+              <Button Text="Entrar" onClick={handleLogin} />
+              <LoginWith />
+              <ButtonGoogle Text="Google"/>
 
-            <label>
-              Não tem uma conta?
+              <label>
+                Não tem uma conta?
 
-              <strong>
-                <Link to="/signup">&nbsp;Registre-se</Link>
-              </strong>
+                <strong>
+                  <Link to="/signup">&nbsp;Registre-se</Link>
+                </strong>
 
-            </label>
+              </label>
 
+            </div>
           </div>
         </div>
 

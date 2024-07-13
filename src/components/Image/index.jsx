@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../assets/list.jpg"
+import Img from "../../assets/list.png"
 import "./style.css";
 
 const Image = () => {
