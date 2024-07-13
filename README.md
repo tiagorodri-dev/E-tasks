@@ -1,9 +1,9 @@
 <h1 align="center">
-  Sistema de Gerenciamento de Tarefas
+  E-tasks
 </h1>
 
 ## 🏠 Aplicação:
-https://gerenciamento-tarefas.vercel.app/
+https://e-tasks.vercel.app/
 <br><br>
 
 ## 🎯 Objetivo:
@@ -56,6 +56,6 @@ As tecnologias utilizadas foram: HTML, CSS, Javascript, React.JS, React Router D
 ## 💻 Telas:
 <div align="center">
   <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/ee92245f-cd84-4f08-b735-839137c75546" width="160">
-  <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/3f2591b5-2f87-4ced-8901-99c019c5b722" width="550">
+  <img src="https://github.com/user-attachments/assets/ae9ee5d0-cdbe-40ba-b3eb-32c454dab5be" width="550">
   <img src="https://github.com/tiagorodri-dev/gerenciamento-de-tarefas/assets/68871083/b7201cda-935d-411e-a82b-25fb8c5c46f5" width="110">
 </div>
