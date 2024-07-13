@@ -16,3 +16,9 @@
   margin: 0 40px 0 40px;
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+  .signup {
+    width: 80%;
+  }
+}

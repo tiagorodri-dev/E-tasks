@@ -37,3 +37,31 @@ a {
     text-decoration: none;
     color: #ff8036;
 }
+
+@media screen and (max-width: 1200px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-right {
+        margin-top: 2em;
+    }
+    .image-controller {
+        width: 100vw;
+        height: 40vh;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .login {
+        width: 80%;
+    }
+    .container-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-dot {
+        display: none;
+    }
+}
