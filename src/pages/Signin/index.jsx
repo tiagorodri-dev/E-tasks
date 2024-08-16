@@ -8,6 +8,7 @@ import Title from "../../components/Title";
 import LoginWith from "../../components/LoginWith";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { GoogleLogin } from '@react-oauth/google';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,6 +36,14 @@ const Signin = () => {
 
     toast.success("Usuário logado com sucesso!");
     navigate("/home");
+  };
+
+  const responseMessage = (response) => {
+    console.log(response);
+    navigate("/home");
+  };
+  const errorMessage = (error) => {
+    console.log(error);
   };
 
   return (
@@ -69,7 +78,7 @@ const Signin = () => {
 
               <Button Text="Entrar" onClick={handleLogin} />
               <LoginWith />
-              <ButtonGoogle Text="Google"/>
+              <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
 
               <label>
                 Não tem uma conta?
