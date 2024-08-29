@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import ButtonGoogle from "../../components/ButtonGoogle";
 import Dot from "../../components/Dot";
 import Image from "../../components/Image";
 import Title from "../../components/Title";
-import LoginWith from "../../components/LoginWith";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { GoogleLogin } from '@react-oauth/google';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -30,7 +27,6 @@ const Signin = () => {
     const res = signin(email, senha);
 
     if (res) {
-    //   setError(res);
       return;
     }
 
@@ -38,12 +34,11 @@ const Signin = () => {
     navigate("/home");
   };
 
-  const responseMessage = (response) => {
-    console.log(response);
-    navigate("/home");
-  };
-  const errorMessage = (error) => {
-    console.log(error);
+  const handleKeyDown = (event) => {
+    console.log("enter")
+    if (event.key === "Enter") {
+      handleLogin();
+    }
   };
 
   return (
@@ -67,6 +62,7 @@ const Signin = () => {
                 placeholder="Digite seu E-mail"
                 value={email}
                 onChange={(e) => [setEmail(e.target.value)]}
+                onKeyDown={handleKeyDown}
               />
 
               <Input
@@ -74,11 +70,10 @@ const Signin = () => {
                 placeholder="Digite sua Senha"
                 value={senha}
                 onChange={(e) => [setSenha(e.target.value)]}
+                onKeyDown={handleKeyDown}
               />
 
               <Button Text="Entrar" onClick={handleLogin} />
-              <LoginWith />
-              <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
 
               <label>
                 Não tem uma conta?

@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { Button, TextField, Checkbox } from '@mui/material';
+import { Button, TextField, Checkbox, Container, Box, Typography, IconButton } from '@mui/material';
 
 import { IoIosAddCircle } from "react-icons/io";
 import { RiLogoutBoxRFill } from "react-icons/ri";
-import { FaTrashCan } from "react-icons/fa6";
-
+import { FaTrashAlt } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./style.css";
@@ -55,15 +54,17 @@ const Home = () => {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <ToastContainer />
-        <div className="top-header">
-          <h1>Lista de Tarefas</h1>
-          <Button variant="contained" color="error" onClick={() => [signout(), navigate("/")]}><RiLogoutBoxRFill /> Sair</Button>
-        </div>
+    <Container maxWidth="sm" className="App">
+      <ToastContainer />
+      <Box className="App-header">
+        <Box className="top-header">
+          <Typography variant="h4" component="h1">Lista de Tarefas</Typography>
+          <Button variant="contained" color="error" startIcon={<RiLogoutBoxRFill />} onClick={() => [signout(), navigate("/")]}>
+            Sair
+          </Button>
+        </Box>
 
-        <div className="todo">
+        <Box className="todo">
           <TextField
             fullWidth
             type="text"
@@ -72,6 +73,7 @@ const Home = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            variant="outlined"
           />
 
           <TextField
@@ -82,34 +84,42 @@ const Home = () => {
             id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            variant="outlined"
           />
 
-          <Button variant="contained" color="success" onClick={handleAddTodo}>
-            <IoIosAddCircle /> Adicionar
+          <Button
+            variant="contained"
+            color="success"
+            startIcon={<IoIosAddCircle />}
+            onClick={handleAddTodo}
+            size="large"
+          >
+            Adicionar
           </Button>
-        </div>
+        </Box>
 
-        <ul className="list">
+        <Box className="list">
           {todos.map((todo, index) => (
-            <li key={index} className={todo.completed ? 'completed' : ''}>
+            <Box key={index} className={`todo-item ${todo.completed ? 'completed' : ''}`}>
               <Checkbox
                 checked={todo.completed}
                 onChange={() => handleToggleComplete(index)}
                 inputProps={{ 'aria-label': 'controlled' }}
+                color="primary"
               />
 
-              <div className="task">
-                <strong>{todo.title}</strong>: {todo.description}
-              </div>
+              <Box className="task">
+                <Typography variant="body1"><strong>{todo.title}</strong>: {todo.description}</Typography>
+              </Box>
 
-              <Button variant="contained" color="error" onClick={() => handleRemoveTodo(index)}>
-                <FaTrashCan />
-              </Button>
-            </li>
+              <IconButton color="error" onClick={() => handleRemoveTodo(index)}>
+                <FaTrashAlt />
+              </IconButton>
+            </Box>
           ))}
-        </ul>
-      </header>
-    </div>
+        </Box>
+      </Box>
+    </Container>
   );
 };
 
